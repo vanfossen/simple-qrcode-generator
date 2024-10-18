@@ -84,9 +84,7 @@ export default function App() {
           )}
         </label>
 
-        {error.length || error.empty ? (
-          <div className="skeleton h-48 w-48 sm:h-96 sm:w-96" />
-        ) : (
+        {!error.length && !error.empty && (
           <QRCodeSVG
             value={inputValue}
             title={`A QRCode of value: '${inputValue}'`}
