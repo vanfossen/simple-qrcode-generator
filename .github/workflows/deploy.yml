@@ -10,15 +10,19 @@ jobs:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install and Build 🔧
+      - name: Install pnpm
         run: |
-          npm ci
-          npm run build
+          npm install -g pnpm
 
-      - name: Deploy 🚀
+      - name: Install and Build
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run build
+
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

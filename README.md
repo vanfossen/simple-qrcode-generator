@@ -8,7 +8,7 @@ The reason for creating this project is to easily create QRCodes on desktop to s
 
 ## Installation / Getting Started
 
-The following assumes you have [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) and/or [Node.js](https://github.com/nodejs/node) installed.
+The following assumes you have [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) and/or [Node.js](https://github.com/nodejs/node) installed with [pnpm](https://github.com/pnpm/pnpm).
 
 1. Clone repository
 
@@ -21,13 +21,13 @@ The following assumes you have [Node Version Manager (NVM)](https://github.com/n
 3. Install dependencies
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 4. Start development server
 
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 ## Main Dependencies
